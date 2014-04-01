@@ -61,7 +61,7 @@
 					</dl>
 				</div>
 			</div>
-			<div class="items"> 	<?$APPLICATION->IncludeComponent(
+			<div class="items_list"> 	<?$APPLICATION->IncludeComponent(
 				"bitrix:news.list",
 				"productsOnMain",
 				Array(

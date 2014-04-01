@@ -3,7 +3,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Доставка");
 ?>
 
-<?/*$APPLICATION->IncludeFile(
+<?$APPLICATION->IncludeFile(
 	SITE_DIR."include/bannerOnMain.php",
 	Array(),
 	Array("MODE"=>"html")
@@ -94,7 +94,6 @@ $APPLICATION->SetTitle("Доставка");
 );?> </div>
  </div>
 
-*/?>
 
 
  <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

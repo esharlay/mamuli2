@@ -1,3 +1,42 @@
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, form, label, ul, ol, dl, fieldset, address, body, html { margin:0; padding:0; }
+li, dd, blockquote {margin:0; padding:0;}
+fieldset {border:none;}
+body {height: 100%; font-family:arial; font-size:13px;}
+img {border:none;}
+html {height: 100%;}
+
+h1 {
+	font-size: 30px;
+	margin:0 0 20px 0; 
+	color:#000;
+}
+h2 {
+	font-size: 24px;
+	margin:0 0 20px 0; 
+	color:#000;
+}
+h3 {
+	font-size: 20px;
+	margin:0 0 10px 0; 
+	color:#000;
+}
+h4 {
+	font-size: 18px;
+	margin:0 0 16px 0; 
+	color:#000;
+}
+h5 {
+	font-size: 16px;
+	margin:0 0 14px 0; 
+	color:#000;
+}
+
+p {font:normal 16px/1.4 Arial; margin:0 0 15px 0; color: #454545;}
+ul {padding:5px 25px; list-style:square; margin:0 0 20px 0;}
+ol {padding:5px 25px; margin:0 0 20px 0;}
+ul li, ol li {font:normal 16px/1.4 Arial; margin:0 0 10px 0;}
+dl dt {color: #454545;}
+
 .container {
 	max-width: 954px;
 	margin: 0 auto;
@@ -147,34 +186,149 @@ main {
 	font-size: 17px;
 }
 
-.content_menu {position: relative;}
-.content_menu .navi {margin: 0 0 30px 0;}
-.content_menu .navi dl {overflow: hidden; margin: 0 0 0 -20px;}
-.content_menu .navi dl dt {margin: 0 0 0 20px; float: left;}
-.content_menu .navi dl dt a {font: bold 20px Arial; color: #333333;  border-bottom:solid 1px #ddd;  display: inline-block; text-decoration: none;}
-.content_menu .navi dl dt a:hover {color: #EA4A2C; border-color:#EA4A2C;}
-.content_menu .navi dl dt a.active {color: #EA4A2C; border-bottom:none;}
+.content_menu {
+	position: relative;
+}
+.content_menu .navi {
+	margin: 0 0 30px 0;
+}
+.content_menu .navi dl {
+	overflow: hidden;
+	margin: 0 0 0 -20px;
+}
+.content_menu .navi dl dt {
+	margin: 0 0 0 20px;
+	float: left;
+}
+.content_menu .navi dl dt a {
+	font-size: 26px;
+	color: #333333;
+	border-bottom:solid 1px #ddd;
+	display: inline-block;
+	text-decoration: none;
+}
+.content_menu .navi dl dt a:hover {
+	color: #EA4A2C;
+ 	border-color:#EA4A2C;
+}
+.content_menu .navi dl dt a.active {
+	color: #EA4A2C;
+	border-bottom:none;
+}
+
+.items_list dl {
+	overflow: hidden; margin: 0 0 0 -20px;
+}
+.items_list dl dt {
+	float: left;
+	margin: 0 0 20px 32px;
+	width: 220px;
+}
+.items_list .img {
+	position: relative;
+}
+.items_list .img img {
+	display: block;
+	height: 206px;
+	width: 216px;
+	overflow: hidden;
+	border: 2px solid #e5e4d8;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+.items_list .img .hidden {
+	display: none;
+}
+.items_list .img .hidden h2 {
+	color: #fff;
+	margin: 0 0 5px 0;
+}
+.items_list .img .hidden .wrapper {
+	padding: 10px;
+}
+.items_list .img .hidden .wrapper .teaser {
+	height: 165px;
+	overflow: hidden;
+}
+.items_list .img .hidden .wrapper .teaser p {
+	color: #fff;
+}
+.items_list dl dt .img:hover .hidden {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #EA4A2C;
+	 width: 220px;
+	height: 100%;
+	color: #fff;
+}
+.items_list .text {
+	padding: 10px;
+}
+.items_list .text .title {
+	margin: 0 0 5px 0;
+	color: #454545;
+}
+.items_list dl dt:hover .text .title {
+	color: #EA4A2D;
+}
+.items_list .basket {
+	position: relative;
+	top: -12px;
+}
+.items_list .basket a {
+	background: url(/img/baskett-sprite.png) no-repeat;
+	display: block;
+	width: 32px;
+	height: 35px;
+	position: relative;
+}
+.items_list .basket a:hover {
+	background-position: 0 -35px;
+}
+.items_list .basket a.active {
+	background-position: 0 -35px;
+}
+.items_list .bottom {
+	overflow: hidden;
+}
+
+.items_list .bottom h3{
+	font-size: 16px;
+	color: #303130;
+}
+
+.items_list .bottom .tooltip {
+	margin: -8px 12px 0 0;
+	display: none;
+}
+.items_list .bottom .basket a.active .tooltip {
+	display: block;
+}
+.items_list .cost {
+	position: relative;
+	float: left;
+	font-size: 22px;
+	color: #419838;
+}
+.items_list .cost:after {
+	position: absolute;
+	top: -6px;
+	left: 0;
+	height: 1px;
+	width: 65px;
+	background: #e5e4d8;
+	display: block;
+	content: "";
+}
+.items_list .basket {
+	float: right;
+}
 
 /******************************************/
 
-h1, h2, h3, h4, h5, h6, p, pre, blockquote, form, label, ul, ol, dl, fieldset, address, body, html { margin:0; padding:0; }
-li, dd, blockquote {margin:0; padding:0;}
-fieldset {border:none;}
-body {height: 100%; background:url(img/japan-pattern.png); font-family:arial; font-size:13px;}
-img {border:none;}
-html {height: 100%;}
 
-h1{font:bold 30px/1.4 'PT Sans Narrow'; margin:0 0 20px 0; color:#000;}
-h2{font:bold 24px/1.4 'PT Sans Narrow'; margin:0 0 20px 0; color:#000;}
-h3{font:bold 20px/1.4 'PT Sans Narrow'; margin:0 0 10px 0; color:#000;}
-h4{font:bold 18px/1.4 'PT Sans Narrow'; margin:0 0 16px 0; color:#000;}
-h5{font:bold 16px/1.4 'PT Sans Narrow'; margin:0 0 14px 0; color:#000;}
-
-p {font:normal 16px/1.4 Arial; margin:0 0 15px 0; color: #454545;}
-ul {padding:5px 25px; list-style:square; margin:0 0 20px 0;}
-ol {padding:5px 25px; margin:0 0 20px 0;}
-ul li, ol li {font:normal 16px/1.4 Arial; margin:0 0 10px 0;}
-dl dt {color: #454545;}
 
 .content #bx-panel{z-index: 450;}
 
