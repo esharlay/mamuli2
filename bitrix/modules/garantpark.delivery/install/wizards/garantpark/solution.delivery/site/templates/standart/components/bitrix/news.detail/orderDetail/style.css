@@ -1,0 +1,8 @@
+table.order-items {width: 100%}
+.order-items th {text-align: left; color: #8C8C8C; border-top: 1px solid #999; border-bottom: 1px solid #999; padding: 15px 7px;}
+.order-items td {padding: 15px 7px;}
+.order-items .total {text-align: right}
+
+.order .l-col {width: 600px; float: left;}
+.order .r-col {width: 320px; float: right;}
+.order .r-col .info {padding-left: 40px}

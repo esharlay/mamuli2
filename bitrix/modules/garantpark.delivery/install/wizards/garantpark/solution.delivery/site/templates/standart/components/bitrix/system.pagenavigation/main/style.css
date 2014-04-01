@@ -1,0 +1,24 @@
+.paginator {margin: 0 0 30px 0; text-align: right;}
+.paginator .wrapper {display:inline-block; zoom:1; *display:inline; overflow: hidden;}
+.paginator a {float: left; width: 26px; height: 26px; border-radius: 3px; border: 1px solid #ddd; margin: 0 0 0 10px; text-align: center; text-decoration: none; color: #505050; font: normal 16px/26px 'PT Sans';}
+.paginator a:hover {
+background: #dddddd; /* Old browsers */
+background: -moz-linear-gradient(top, #dddddd 0%, #ffffff 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dddddd), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #dddddd 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #dddddd 0%,#ffffff 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #dddddd 0%,#ffffff 100%); /* IE10+ */
+background: linear-gradient(to bottom, #dddddd 0%,#ffffff 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */;}
+.paginator a.active {
+background: #dddddd; /* Old browsers */
+background: -moz-linear-gradient(top, #dddddd 0%, #ffffff 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dddddd), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #dddddd 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #dddddd 0%,#ffffff 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #dddddd 0%,#ffffff 100%); /* IE10+ */
+background: linear-gradient(to bottom, #dddddd 0%,#ffffff 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */;}
+.paginator .p1 span {background: url(img/navi-paginator.png) no-repeat; width: 9px; height: 14px; display:inline-block; zoom:1; *display:inline; margin: 6px 0 0 0;}
+.paginator .prev span {background-position: 0 0;}
+.paginator .next span {background-position: 0 -54px;}

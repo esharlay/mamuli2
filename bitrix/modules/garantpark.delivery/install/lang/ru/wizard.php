@@ -1,0 +1,30 @@
+<?
+$MESS['WIZ_TEMPLATE_SETTINGS'] = 'Настройка шаблона';
+$MESS['WIZ_MAIN_SETTINGS'] = 'Настройка решения';
+$MESS['WIZ_MODULE_SETTINGS'] = 'Настройка модулей';
+$MESS['WIZ_INSTALL'] = 'Установка';
+$MESS['WIZ_FINISH'] = 'Завершение установки';
+$MESS['WIZ_GO'] = 'Перейти на сайт';
+$MESS['WIZ_NOT_FIRST'] = 'Данный мастер предназначен для установки на чистую версию 1С-Битрикс!';
+$MESS['WIZ_TEMPLATE_NAME'] = 'Название шаблона';
+$MESS['WIZ_TEMPLATE_NAME_DEFAULT'] = 'Пустой шаблон';
+$MESS['WIZ_TEMPLATE_DESCRIPTION'] = 'Описание шаблона';
+$MESS['WIZ_TEMPLATE_DESCRIPTION_DEFAULT'] = 'Пустой шаблон для сайта';
+$MESS['WIZ_TEMPLATE_DIR'] = 'Папка шаблона';
+$MESS['WIZ_TEMPLATE_DIR_DEFAULT'] = 'stroy';
+$MESS['WIZ_TEMPLATE_DIR_ERROR'] = 'Папка шаблона содержит недопустимые символы!';
+$MESS['WIZ_SETTINGS_SITE_NAME'] = 'Название сайта';
+$MESS['WIZ_SETTINGS_SITE_NAME_DEFAULT'] = 'Название сайта';
+$MESS['WIZ_SETTINGS_TITLE'] = 'Title';
+$MESS['WIZ_SETTINGS_TITLE_DEFAULT'] = 'Title';
+$MESS['WIZ_SETTINGS_DESCRIPTION'] = 'Description';
+$MESS['WIZ_SETTINGS_DESCRIPTION_DEFAULT'] = 'Description';
+$MESS['WIZ_SETTINGS_KEYWORDS'] = 'Keywords';
+$MESS['WIZ_SETTINGS_KEYWORDS_DEFAULT'] = 'Keywords';
+$MESS['WIZ_MODULE_INSTALL'] = 'Установить модули';
+$MESS['WIZ_TEMPLATE_INSTALL'] = 'Установка шаблона';
+$MESS['WIZ_SETTINGS_INSTALL'] = 'Настройка параметров';
+$MESS['WIZ_MODULE_INSTALLING'] = 'Установка модуля: ';
+$MESS['WIZ_MODULE_UNINSTALLING'] = 'Деинсталяция модуля: ';
+$MESS['WIZ_START_INSTALL'] = 'Начало установки';
+?>

@@ -1,0 +1,273 @@
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, form, label, ul, ol, dl, fieldset, address, body, html { margin:0; padding:0; }
+li, dd, blockquote {margin:0; padding:0;}
+fieldset {border:none;}
+body {height: 100%; background:url(img/japan-pattern.png); font-family:arial; font-size:13px;}
+img {border:none;}
+html {height: 100%;}
+
+h1{font:bold 30px/1.4 'PT Sans Narrow'; margin:0 0 20px 0; color:#000;}
+h2{font:bold 24px/1.4 'PT Sans Narrow'; margin:0 0 20px 0; color:#000;}
+h3{font:bold 20px/1.4 'PT Sans Narrow'; margin:0 0 10px 0; color:#000;}
+h4{font:bold 18px/1.4 'PT Sans Narrow'; margin:0 0 16px 0; color:#000;}
+h5{font:bold 16px/1.4 'PT Sans Narrow'; margin:0 0 14px 0; color:#000;}
+
+p {font:normal 16px/1.4 Arial; margin:0 0 15px 0; color: #454545;}
+ul {padding:5px 25px; list-style:square; margin:0 0 20px 0;}
+ol {padding:5px 25px; margin:0 0 20px 0;}
+ul li, ol li {font:normal 16px/1.4 Arial; margin:0 0 10px 0;}
+dl dt {color: #454545;}
+
+.mb0 {margin-bottom: 0px;}
+.mb5 {margin-bottom: 5px;}
+.mb10 {margin-bottom: 10px;}
+.mb20 {margin-bottom: 20px;}
+.mb30 {margin-bottom: 30px;}
+.mb40 {margin-bottom: 40px;}
+.mb50 {margin-bottom: 50px;}
+.fl-l {float: left;}
+.fl-r {float: right;}
+.oh {overflow: hidden;}
+.grey {color: #878787;}
+
+#panel {display: none}
+
+a {color:#009FDC;}
+a:hover {color:#EA4A2C;}
+
+.content #bx-panel{z-index: 450;}
+
+#container {height: auto; min-height: 100%; position: relative;}
+#content {height: auto; min-height: 100%; padding:20px 20px 120px 20px; margin: 0 auto; width: 940px;}
+#footer {position: absolute; bottom: 0; left: 0; height: 80px; width: 100%; background: #1C1C1C;} /*footer bottom*/
+
+/*global style*/
+.clear {clear: both; width: 100%; height: 1px; margin: 0; padding: 0; float: none;}
+.centered {width: 940px; padding: 0 30px; margin: 0 auto; position: relative;}
+
+#header {background: #1C1C1C; width: 100%; height:50px; position:fixed; top: 0; left: 0; z-index:9999;}
+#header .logo {position: absolute; left: 30px; top: 10px;}
+#header .navi {position: absolute; left: 240px; top: 15px;}
+#header .admin {position: absolute; left: 615px; top: 15px;}
+#header .admin a{color: #fff;}
+#header .navi dl {overflow: hidden; margin: 0 0 0 -30px;}
+#header .navi dl dt {float: left; margin: 0 0 0 30px;}
+#header .navi dl dt a {color: #fff; font:normal 13px  Arial;}
+#header .navi dl dt a:hover {color: #EA4A2D;}
+#header .contact {position: absolute; right: 30px; top: 5px;}
+#header .contact p {margin: 0; color: #fff;}
+#header .contact .number {font: bold 20px Arial;}
+#header .contact .text {font: normal 13px Arial;}
+#header .basket {width: 50px; height: 50px; right: 240px; top: 0; position: absolute;}
+#header .basket a {background: url(img/basket.png) center 13px no-repeat #EA4A2D; width: 50px; height: 50px; position: relative; display: block; text-decoration: none;}
+#header .basket a.active {background-position: center -39px;}
+.tooltip {background: #EA4A2D; height: 20px; padding: 3px 5px; center; position: absolute; right: 100%; top: 50%; margin: -12px 10px 0 0;}
+#header .basket a:hover {background-color:#fb583b;}
+.tooltip .wrapper {position: relative;}
+.tooltip .tic {position: absolute; right: -12px; top: 50%; margin: -6px 0 0 0; background: url(img/cost-tic.png) no-repeat; width: 7px; height: 12px; display: block;}
+.tooltip p {font: normal 14px/20px Arial; color: #fff; width: 100%; margin: 0; white-space: nowrap;}
+
+.basket-container {position:relative; height:50px;}
+.basket-container .hidden-basket {width:980px; z-index:5000; position:absolute; top:50px; left: 50%; margin:0 0 0 -490px; background: #fff; padding: 20px 20px 40px 20px; box-shadow: 0 2px 8px 1px #999; display: none;}
+.hidden-basket .wrapper {position: relative;}
+.hidden-basket .close-basket a {background: url(img/hidden-baskey-close.png) no-repeat; width: 30px; height: 30px; display: block; position: absolute; bottom: -40px; left: 50%; margin: 0 0 0 -15px;}
+.hidden-basket .close-basket a:hover {background-position: 0 -31px;}
+.hidden-basket .cols {overflow: hidden;}
+.hidden-basket .cols .left-col {float: left; width: 450px;}
+.hidden-basket .cols .right-col {float: right; width: 425px;}
+.hidden-basket table.order {width: 100%; border-collapse: collapse;}
+.hidden-basket table.order tr td {border-bottom: 1px solid #ccc;}
+.hidden-basket .order .delete {width: 20px; padding: 0; vertical-align: top; padding: 10px 0 10px 0;}
+.hidden-basket .order .delete a {background: url(img/delete.png) no-repeat; width: 20px; height: 20px; display: block;}
+.hidden-basket .order .delete a:hover {background-position: 0 -21px;}
+.order-clear {background: url(img/delete.png) no-repeat; width: 20px; height: 20px; display: block; float: right}
+.order-clear:hover {background-position: 0 -21px;}
+.hidden-basket .order .image {padding: 0; width: 40px; vertical-align: top; padding: 10px 0 10px 0;}
+.hidden-basket .order .image img {max-width: 38px; border: 1px solid #ccc; display: block;}
+.hidden-basket .order .name {font: normal 18px 'PT Sans Narrow'; padding: 10px; width: 200px; vertical-align: top;}
+.hidden-basket .order .qnty {width: 75px; vertical-align: top; padding: 10px 0 10px 0;}
+.hidden-basket .order .qnty .wrapper {height: 31px; width: 75px; overflow: hidden;}
+.hidden-basket .order .qnty a {background: url(img/qnty.png) no-repeat; width: 14px; height: 14px; display: inline-block; zoom: 1; *display: inline; margin: 10px 0 0 0;}
+.hidden-basket .order .qnty a.minus {float: left; background-position: 0 0;}
+.hidden-basket .order .qnty a.minus:hover {background-position: 0 -24px;}
+.hidden-basket .order .qnty a.plus {float: right; background-position: -22px 0;}
+.hidden-basket .order .qnty a.plus:hover {background-position: -22px -24px;}
+.hidden-basket .order .qnty input {float: left; width: 27px; height: 27px; border: 1px solid #ccc; text-align: center; font: bold 20px 'PT Sans Narrow'; margin: 0 8px;}
+.hidden-basket .order .cost {font: bold 20px 'PT Sans Narrow'; color: #454545; text-align: center; vertical-align: top; padding: 10px;}
+.hidden-basket .order .sum td {padding: 10px; border-bottom: none; font: bold 24px 'PT Sans Narrow'; color: #666666;}
+
+.hidden-basket .form {width: 100%;}
+.hidden-basket .form tr td {padding: 0 0 10px 0;}
+.hidden-basket .form input {padding: 0;}
+.hidden-basket .form .title {text-align: right; font: bold 18px 'PT Sans Narrow'; padding: 0 6px 10px 0; width: 129px;}
+.hidden-basket .form .text {width: 280px; height: 31px;}
+.hidden-basket .form .text-small {width: 60px; height: 31px;}
+.hidden-basket .form .title.area {vertical-align: top;}
+.hidden-basket .form textarea {width: 280px; height: 80px; resize: none;}
+.hidden-basket .form .person {width: 35px; height: 31px; text-align: center; font: normal 20px 'PT Sans Narrow'; border: 1px solid #B0DC7B; vertical-align: top; margin: 0 10px 0 0;}
+.hidden-basket .form .pokemon {padding: 10px 0 30px 0;}
+.hidden-basket .form .pokemon img {cursor:pointer;}
+.hidden-basket .form .btn-add {background: url(img/btn-add.png) no-repeat 8px center #B0DC7B; padding: 6px 10px 6px 30px; display: inline-block; zoom: 1; *display: inline; text-decoration: none; color: #454545; font: normal 16px 'PT Sans Narrow';}
+.hidden-basket .form .btn-add:hover {background: url(img/btn-add.png) no-repeat 8px center #D6EDBA;}
+.hidden-basket .form .btn-order {text-align: center;}
+.hidden-basket .form .btn-order input {background:#EA4A2D; font:bold 16px arial; color:#fff; border: none; width: 280px; height: 40px; cursor: pointer; display: inline-block; zoom: 1; *display: inline;}
+.hidden-basket .form .btn-order input:hover {background:#fb583b;}
+
+.navigation {margin: 0 0 30px 0;}
+.navigation dl {overflow: hidden; margin: 0 0 0 -20px;}
+.navigation dl dt {margin: 0 0 0 20px; float: left;}
+.navigation dl dt a {font: bold 20px Arial; color: #333333;  border-bottom:solid 1px #ddd;  display: inline-block; text-decoration: none;}
+.navigation dl dt a:hover {color: #EA4A2C; border-color:#EA4A2C;}
+.navigation dl dt a.active {color: #EA4A2C; border-bottom:none;}
+.navigation dl dt a.active:hover {border-bottom:solid 1px #EA4A2C;}
+
+.l-col {width: 700px; float: left;}
+.r-col {width: 220px; float: right;}
+
+.main {margin: 0 0 30px 0;}
+.main .step dl dt {overflow: hidden; padding: 30px 0; border-top: 1px solid #B0DC7B;}
+.main .step dl dt.last {border-bottom: 1px solid #B0DC7B;}
+.main .step .number {font: bold 60px Arial; color: #6AB244; float: left; margin: 0 20px 0 0;}
+.main .step .text {overflow: hidden; font: bold 18px Arial; padding: 10px 0 0 0; color: #454545;}
+.main .fixed {width: 460px; float: right; position: relative;}
+.main .fixed.inner {float: left;}
+.main .fixed .text {position: absolute; left: 10px; bottom: 10px; background: #6AB244; padding: 3px 10px; box-shadow: -10px -5px 0 0 #B0DC7B;}
+.main .fixed .text p {margin: 0; font: normal 20px PT Sans Narrow; color: #fff;}
+.main .animation {width: 220px; float: left; cursor: pointer; position: relative;}
+.main .animation .hidden {display: none; color: #fff;}
+.main .animation .hidden h2 {border-bottom: 1px solid #fff; color: #fff;}
+.main .animation .text {height: 133px; overflow: hidden;}
+.main .animation .text p {color: #fff;}
+.main .animation:hover .hidden {position: absolute; top: 0; left: 0; background: #6AB244; width: 196px; height: 180px; display: block; padding: 20px 12px;}
+.main .animation.inner {float: right;}
+.main img {display: block;}
+.main .row {margin: 0 0 20px 0; overflow: hidden;}
+
+.menu {position: relative;}
+.menu .navi {margin: 0 0 30px 0;}
+.menu .navi dl {overflow: hidden; margin: 0 0 0 -20px;}
+.menu .navi dl dt {margin: 0 0 0 20px; float: left;}
+.menu .navi dl dt a {font: bold 20px Arial; color: #333333;  border-bottom:solid 1px #ddd;  display: inline-block; text-decoration: none;}
+.menu .navi dl dt a:hover {color: #EA4A2C; border-color:#EA4A2C;}
+.menu .navi dl dt a.active {color: #EA4A2C; border-bottom:none;}
+
+.items dl {overflow: hidden; margin: 0 0 0 -20px;}
+.items dl dt {float: left; margin: 0 0 20px 20px; width: 220px; background: #efefef;}
+.items .img {position: relative;}
+.items .img img {display: block;}
+.items .img .hidden {display: none;}
+.items .img .hidden h2 {color: #fff; margin: 0 0 5px 0;}
+.items .img .hidden .wrapper {padding: 10px;}
+.items .img .hidden .wrapper .teaser {height: 165px; overflow: hidden;}
+.items .img .hidden .wrapper .teaser p {color: #fff;}
+.items dl dt .img:hover .hidden {display: block; position: absolute; top: 0; left: 0; background: #EA4A2C;  width: 220px; height: 100%; color: #fff;}
+.items .text {padding: 10px;}
+.items .text .title {margin: 0 0 5px 0; color: #454545;}
+.items dl dt:hover .text .title {color: #EA4A2D;}
+.items .basket a {background: url(img/basket-sprite.png) no-repeat; display: block; width: 30px; height: 25px; position: relative;}
+.items .basket a:hover {background-position: 0 -26px;}
+.items .basket a.active {background-position: 0 -26px;}
+.items .bottom {overflow: hidden;}
+.items .bottom .tooltip {margin: -12px 12px 0 0; display: none;}
+.items .bottom .basket a.active .tooltip {display: block;}
+.items .cost {float: left; font: bold 22px 'PT Sans Narrow'; color: #666666;}
+.items .basket {float: right;}
+
+.list-menu {position: absolute; top: 0; right: 0; z-index: 50;}
+.list-menu .hidden {background: #B0DC7B; width: 235px; position: absolute; top: 30px; right: 0; display: none;}
+.list-menu:hover .hidden {display: block; }
+.list-menu .wrapper {position: relative;}
+.list-menu dl {position: relative;}
+.list-menu dl dt {border-bottom: 1px solid #6AB244;}
+.list-menu dl dt.last {border: none;}
+.list-menu dl dt a {display: block; padding: 10px 15px; min-width: 205px; font: bold 20px Arial; text-decoration: none; color: #454545;}
+.list-menu dl dt a:hover {background: #6AB244; color: #fff;}
+.list-menu .dropdown {cursor:pointer; background: url(img/dropdown.png) no-repeat right top #B0DC7B; display: block; height: 30px; width: 110px; padding: 0 0 0 15px; font: normal 14px/30px Arial; color: #000; text-decoration: none; float: right;}
+.list-menu:hover .dropdown {background: url(img/dropdown.png) no-repeat right top #6AB244; color: #fff;}
+.list-menu .dropdown-tic {display:none;/*background: url(img/dropdown-tic.png) no-repeat; position: absolute; top: -8px; right: 8px; width: 15px; height: 8px;*/}
+
+#footer .logo {position: absolute; top: 25px; left: 30px;}
+#footer .navi {position: absolute; top: 25px; left: 240px;}
+#footer .navi dl {overflow: hidden; margin: 0 0 0 -30px;}
+#footer .navi dl dt {float: left; margin: 0 0 0 30px;}
+#footer .navi dl dt a {font: normal 14px Arial; color: #fff;}
+#footer .navi dl dt a:hover { color: #EA4A2C;}
+#footer .gp {position: absolute; right: 30px; top: 25px;}
+
+.footer-promo {margin: 40px 0 0px 0;}
+.footer-promo img {display: block;}
+.footer-promo .row {padding: 0; margin: 0;}
+.footer-promo .animation {width: 220px; float: left; position: relative; margin-right: 20px}
+.footer-promo .fixed {width: 460px; float: right; position: relative;}
+.footer-promo .fixed .text {position: absolute; left: 10px; bottom: 10px; background: #6AB244; padding: 3px 10px; box-shadow: -10px -5px 0 0 #B0DC7B;}
+.footer-promo .animation .hidden {display: none; color: #fff;}
+.footer-promo .animation .hidden h2 {border-bottom: 1px solid #fff; color: #fff;}
+.footer-promo .animation .text {height: 133px; overflow: hidden;}
+.footer-promo .animation .text p {color: #fff;}
+.footer-promo .animation:hover .hidden {position: absolute; top: 0; left: 0; background: #6AB244; width: 196px; height: 180px; display: block; padding: 20px 12px;}
+.footer-promo .fixed .text p {margin: 0; font: normal 20px PT Sans Narrow; color: #fff;}
+
+.discounts .l-col {width: 460px;}
+.discounts .r-col {width: 460px;}
+.discounts .text {margin-top: 10px}
+
+
+
+
+/*Menu*/
+
+.navigation-inner dl {margin: 0 0 0 -30px; overflow: hidden;}
+.navigation-inner dl dt {float: left; margin: 0 0 20px 30px;}
+.navigation-inner dl dt a {font: normal 14px Arial;}
+.navigation-inner dl dt a:hover {color: #EA4A2C;}
+.navigation-inner dl dt a.active {color: #EA4A2C; font-weight: bold;}
+
+/*Delivery*/
+
+.info dt {margin: 0 0 20px 0;}
+.delivery dl dt {font:normal 16px/1.4 Arial;}
+.delivery .advantage {margin: 0 0 30px 0;}
+.delivery .advantage dl {overflow: hidden; margin: 0 0 0 -20px;}
+.delivery .advantage dl dt {float: left; margin: 0 0 0 20px; width: 220px; }
+.delivery .advantage dl dt .text {width: 220px; height: 160px; background: #B0DC7B; margin: 0 0 5px 0; text-align: center;}
+.delivery .advantage dl dt .text h2 {padding: 45px 20px 0 20px; color: #454545; height: 65px; overflow: hidden;}
+.delivery .advantage dl dt .teaser p {font: normal 17px Trebuchet MS;}
+
+
+#footer .logo {position: absolute; top: 25px; left: 30px;}
+#footer .navi {position: absolute; top: 25px; left: 240px;}
+#footer .navi dl {overflow: hidden; margin: 0 0 0 -30px;}
+#footer .navi dl dt {float: left; margin: 0 0 0 30px;}
+#footer .navi dl dt a {font: normal 14px Arial; color: #fff;}
+#footer .navi dl dt a:hover { color: #EA4A2C;}
+#footer .gp {position: absolute; right: 30px; top: 25px;}
+
+
+.bg-popup {background: url(/img/bg-popup.png); display: none; width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 90000;}
+.popup {position: fixed; display: none; background: #fff; margin: auto; top: 0; bottom: 0; left: 0; right: 0; width: 700px; height: 380px; z-index: 99999;}
+.popup .wrapper {position: relative; padding: 10px;}
+.popup .btn-close a {width: 31px; height: 32px; background: url(/img/btn-close.png) no-repeat; display: block; position: absolute; top: -16px; right: -16px;}
+.popup .btn-close a:hover {background-position: 0 -42px;}
+.popup .img {float: left; margin: 0 20px 0 0;}
+.popup .img img {display: block; max-width: 360px; max-height: 360px;}
+.popup .text {overflow: hidden;}
+.popup .cost {font: bold 16px Arial; margin: 0 20px 0 0;}
+.popup .in {font: normal 14px Arial; color: #999; margin: 2px 0 0 0;}
+.qnty {width: 78px; overflow: hidden; margin: 0 20px 0 0;}
+.qnty input {width: 28px; height: 22px; border: 1px solid #F2F2F2; text-align: center; font: normal 14px Tahoma; padding: 0;}
+.qnty a {background: url(/img/qnty-basket-navi.png) no-repeat; width: 24px; height: 24px; display: block;}
+.qnty a.minus {background-position: 0 0;}
+.qnty a.minus:hover {background-position: 0 -29px;}
+.qnty a.plus {background-position: -30px 0;}
+.qnty a.plus:hover {background-position: -30px -29px;}
+.popup .btn-buy input {background: #666; border: none; padding: 3px 10px; border-radius: 5px; text-align: center; cursor: pointer; color: #fff;}
+.popup .btn-buy input:hover {background: #EA4A2D; color: #fff; border-color: #EA4A2D;}
+.popup .btn-buy input:active {background: #EE725B;}
+.popup .description  {height: 163px; overflow: hidden;}
+.popup .description .title {font: bold 14px Arial; margin: 0 0 5px 0;}
+.popup .description p {margin: 0; font: normal 13px/1.2 Arial;}
+
+
+
+
+
+
