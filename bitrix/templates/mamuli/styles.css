@@ -1,6 +1,20 @@
 .container {
-	max-width: 954px;
-	margin: 0 auto;
+	max-width: 990px;
+}
+
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11,
+.col-md-12 {
+	//outline: 1px solid red;
 }
 
 header {
@@ -10,13 +24,11 @@ header {
 }
 
 header .logo{	
-	position: absolute;
-	left: 0;
-	top: 5px;
 	display: block;
 	width: 465px;
 	height: 213px;
 	background: url(/img/header_logo.jpg) center top no-repeat;
+	margin-top: 5px;
 }
 
 header .phone{
@@ -59,108 +71,12 @@ header .bskt .icon{
 	background: url(/img/header_busket_logo.jpg) center center no-repeat;
 }
 
-.navigation_top {
-	height: 50px;
-	overflow: hidden;
-	margin: 0 0 30px 0;
-}
-
-.top_menu {
-	height: 47px;
-	-webkit-border-radius: 6px;
-	border-radius: 6px;
-	border-bottom: 3px solid #266d2c;
-	background: #6eb535;
-	background: -moz-linear-gradient(top,  #6eb535 0%, #308d39 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6eb535), color-stop(100%,#308d39));
-	background: -webkit-linear-gradient(top,  #6eb535 0%,#308d39 100%);
-	background: -o-linear-gradient(top,  #6eb535 0%,#308d39 100%);
-	background: -ms-linear-gradient(top,  #6eb535 0%,#308d39 100%);
-	background: linear-gradient(to bottom,  #6eb535 0%,#308d39 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6eb535', endColorstr='#308d39',GradientType=0 );
-	padding: 0 36px;
-}
-
-.top_menu li{
-	float: left;
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-.top_menu li a{
-	display: block;
-	color: #fff;
-	margin: 0;
-	padding: 12px 33px 12px 35px;
-	text-decoration: underline;
-}
-
-.top_menu li+li a{
-	background: url(/img/top_menu_separator_bkg.png) left center no-repeat;
-}
-
-.top_menu li a:hover,
-.top_menu li a.selected{
-	text-decoration: none;
-	color: #1d5816;
-}
-
-aside,
-main {
-	float: left;
-}
-
-aside {
-	width: 190px;
-	margin: 0 26px 0 0;
-}
-
-main {
-	width: 738px;
-	margin: 0;
-}
-
-.navigation_left {
-	border: 2px solid #e5e4d8;
-	-webkit-border-radius: 6px;
-	border-radius: 6px;
-	padding: 14px 16px;
-	margin: 0 0 20px 0;
-}
-
-.left_menu {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-.left_menu li{
-	margin: 0;
-	padding: 0 6px;
-	border-bottom: 1px dashed #e5e4d8;
-	background: url(/img/left_menu_arrow.png) right 8px no-repeat;
-}
-
-.left_menu li a{
-	color: #303130;
-	font-size: 17px;
-}
-
-.content_menu {position: relative;}
-.content_menu .navi {margin: 0 0 30px 0;}
-.content_menu .navi dl {overflow: hidden; margin: 0 0 0 -20px;}
-.content_menu .navi dl dt {margin: 0 0 0 20px; float: left;}
-.content_menu .navi dl dt a {font: bold 20px Arial; color: #333333;  border-bottom:solid 1px #ddd;  display: inline-block; text-decoration: none;}
-.content_menu .navi dl dt a:hover {color: #EA4A2C; border-color:#EA4A2C;}
-.content_menu .navi dl dt a.active {color: #EA4A2C; border-bottom:none;}
-
-/******************************************/
+/**********************************************************************/
 
 h1, h2, h3, h4, h5, h6, p, pre, blockquote, form, label, ul, ol, dl, fieldset, address, body, html { margin:0; padding:0; }
 li, dd, blockquote {margin:0; padding:0;}
 fieldset {border:none;}
-body {height: 100%; background:url(img/japan-pattern.png); font-family:arial; font-size:13px;}
+body {height: 100%; background: #ffffff; font-family:arial; font-size:13px;}
 img {border:none;}
 html {height: 100%;}
 
@@ -175,6 +91,23 @@ ul {padding:5px 25px; list-style:square; margin:0 0 20px 0;}
 ol {padding:5px 25px; margin:0 0 20px 0;}
 ul li, ol li {font:normal 16px/1.4 Arial; margin:0 0 10px 0;}
 dl dt {color: #454545;}
+
+.mb0 {margin-bottom: 0px;}
+.mb5 {margin-bottom: 5px;}
+.mb10 {margin-bottom: 10px;}
+.mb20 {margin-bottom: 20px;}
+.mb30 {margin-bottom: 30px;}
+.mb40 {margin-bottom: 40px;}
+.mb50 {margin-bottom: 50px;}
+.fl-l {float: left;}
+.fl-r {float: right;}
+.oh {overflow: hidden;}
+.grey {color: #878787;}
+
+#panel {display: none}
+
+a {color:#009FDC;}
+a:hover {color:#EA4A2C;}
 
 .content #bx-panel{z-index: 450;}
 
