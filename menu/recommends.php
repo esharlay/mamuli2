@@ -6,7 +6,7 @@ $arFilter = array("PROPERTY_ISRECOMMEND_VALUE" => "Y");
 
 ?>
 
-<div class="items">
+<div class="items_list">
 	<h1>Рекомендуемые заказы:</h1>
 	<?$APPLICATION->IncludeComponent("bitrix:news.list", "productsOnMain", array(
 		"IBLOCK_TYPE" => "objects",

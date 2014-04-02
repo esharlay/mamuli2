@@ -34,7 +34,12 @@
 			<div class="phone">
 				+7 499 <span>476-24-34</span>
 			</div>
-			<a href="/feedback" class="btn_large">Обратная связь</a>
+			<? if ($USER->IsAdmin()): ?>
+				<a href="/orders/" class="btn_large">Заказы</a>
+			<? else: ?>
+				<a href="/feedback/" class="btn_large">Обратная связь</a>
+			<? endif ?>
+			
 			<div class="bskt">
 				<?
 				$cart = $_SESSION['cart'];

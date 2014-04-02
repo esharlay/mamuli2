@@ -7,7 +7,7 @@ if ($_REQUEST["SECTION_ID"])
 ?>
 
 
-<div class="items">
+<div class="items_list">
 	<h1>Новые поступления:</h1>
 	<?$APPLICATION->IncludeComponent("bitrix:news.list", "productsOnMain", array(
 		"IBLOCK_TYPE" => "objects",

@@ -38,7 +38,7 @@ if ($_REQUEST["SUBSECTION_ID"])
 
 ?>
 
-<div class="items">
+<div class="items_list">
 	<h1><? echo $name; ?></h1>
 	<?$APPLICATION->IncludeComponent("bitrix:news.list", "productsOnMain", array(
 		"IBLOCK_TYPE" => "objects",

@@ -4,7 +4,7 @@ $APPLICATION->SetTitle("Меню");
 ?>
 
 
-<div class="items">
+<div class="items_list">
 	<h1>Часто заказываемые:</h1>
 	<?$APPLICATION->IncludeComponent("bitrix:news.list", "productsOnMain", array(
 	"IBLOCK_TYPE" => "objects",

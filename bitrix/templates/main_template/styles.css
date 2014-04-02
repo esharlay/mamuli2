@@ -573,6 +573,7 @@ footer a{
 .menu .navi dl dt a:hover {color: #EA4A2C; border-color:#EA4A2C;}
 .menu .navi dl dt a.active {color: #EA4A2C; border-bottom:none;}
 
+/*
 .items dl {overflow: hidden; margin: 0 0 0 -20px;}
 .items dl dt {float: left; margin: 0 0 20px 20px; width: 220px; background: #efefef;}
 .items .img {position: relative;}
@@ -607,7 +608,7 @@ footer a{
 .list-menu .dropdown {cursor:pointer; background: url(img/dropdown.png) no-repeat right top #B0DC7B; display: block; height: 30px; width: 110px; padding: 0 0 0 15px; font: normal 14px/30px Arial; color: #000; text-decoration: none; float: right;}
 .list-menu:hover .dropdown {background: url(img/dropdown.png) no-repeat right top #6AB244; color: #fff;}
 .list-menu .dropdown-tic {display:none;/*background: url(img/dropdown-tic.png) no-repeat; position: absolute; top: -8px; right: 8px; width: 15px; height: 8px;*/}
-
+*/
 #footer .logo {position: absolute; top: 25px; left: 30px;}
 #footer .navi {position: absolute; top: 25px; left: 240px;}
 #footer .navi dl {overflow: hidden; margin: 0 0 0 -30px;}
