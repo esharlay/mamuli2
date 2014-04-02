@@ -5,13 +5,22 @@ body {height: 100%; font-family:arial; font-size:13px;}
 img {border:none;}
 html {height: 100%;}
 
+main p {
+	font-size: 13px;
+}
+
+hr {
+	margin: 0 0 15px 0;
+}
+
 h1 {
-	font-size: 30px;
+	font-size: 26px;
 	margin:0 0 20px 0; 
 	color:#000;
+	font-weight: normal;
 }
 h2 {
-	font-size: 24px;
+	font-size: 22px;
 	margin:0 0 20px 0; 
 	color:#000;
 }
@@ -84,7 +93,7 @@ header .btn_large{
 	border-radius: 25px;
 }
 
-header .bskt {
+/*header .bskt {
 	position: absolute;
 	top: 30px;
 	right: 0;
@@ -96,6 +105,32 @@ header .bskt .icon{
 	height: 65px;
 	margin: 0 auto 5px auto;
 	background: url(/img/header_busket_logo.jpg) center center no-repeat;
+}*/
+
+header .bskt {
+	position: absolute;
+	top: 30px;
+	right: 0;
+	width: 59px;
+	height: 65px;
+}
+
+header .bskt #cart{
+	position: relative;
+	display: block;
+	width: 59px;
+	height: 65px;
+	background: url(/img/header_busket_logo.jpg) center center no-repeat;
+	color: #000;
+}
+
+header .bskt #cart .cost{
+	position: absolute;
+	top: 80px;
+	left: -10px;
+	width: 70px;
+	background: none;
+	text-align: center;
 }
 
 .navigation_top {
@@ -158,6 +193,7 @@ aside {
 main {
 	width: 738px;
 	margin: 0;
+	padding: 0 0 50px 0;
 }
 
 .navigation_left {
@@ -326,13 +362,84 @@ main {
 	float: right;
 }
 
+footer {
+	height: 128px;
+	position: relative;
+	background: #e5e4d8;
+	font-size: 13px;
+	color: #303130;
+	-webkit-border-radius: 8px 8px 0 0;
+	border-radius: 8px 8px 0 0;
+}
+
+footer a{
+	font-size: 13px;
+	color: #303130;
+	text-decoration: none;
+}
+
+.copyright_mamuli {
+	position: absolute;
+	top: 50px;
+	left: 27px;
+}
+
+.footer_phone {
+	position: absolute;
+	top: 36px;
+	right: 358px;
+	font-size: 26px;
+	color: #747365;
+}
+
+.footer_phone .phone_icon{
+	position: relative;
+	top: -2px;
+	left: 0;
+	width: 34px;
+	height: 35px;
+	background: url(/img/footer_phone.png) left top no-repeat;
+	float: left;
+	margin: 0 5px 0 0;
+}
+
+.footer_phone .dark {
+	color: #303130;
+}
+
+.footer_btn {
+	position: absolute;
+	top: 70px;
+	right: 358px;
+	font-size: 14px;
+	color: #419838;
+	background: #ffffff;
+	display: block;
+	padding: 7px 17px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	text-decoration: underline;
+}
+
+.footer_btn:hover {
+	text-decoration: none;
+}
+
+.copyright_pixel {
+	position: absolute;
+	top: 50px;
+	right: 27px;
+}
+
+
+
 /******************************************/
 
 
 
 .content #bx-panel{z-index: 450;}
 
-#container {height: auto; min-height: 100%; position: relative;}
+#container {height: auto; position: relative;}
 #content {height: auto; min-height: 100%; padding:20px 20px 120px 20px; margin: 0 auto; width: 940px;}
 #footer {position: absolute; bottom: 0; left: 0; height: 80px; width: 100%; background: #1C1C1C;} /*footer bottom*/
 
@@ -362,8 +469,8 @@ main {
 .tooltip .tic {position: absolute; right: -12px; top: 50%; margin: -6px 0 0 0; background: url(img/cost-tic.png) no-repeat; width: 7px; height: 12px; display: block;}
 .tooltip p {font: normal 14px/20px Arial; color: #fff; width: 100%; margin: 0; white-space: nowrap;}
 
-.basket-container {position:relative; height:50px;}
-.basket-container .hidden-basket {width:980px; z-index:5000; position:absolute; top:50px; left: 50%; margin:0 0 0 -490px; background: #fff; padding: 20px 20px 40px 20px; box-shadow: 0 2px 8px 1px #999; display: none;}
+.basket-container {position:relative;}
+.basket-container .hidden-basket {width:980px; z-index:5000; position:absolute; left: 50%; margin:0 0 0 -490px; background: #fff; padding: 20px 20px 40px 20px; box-shadow: 0 2px 8px 1px #999; display: none;}
 .hidden-basket .wrapper {position: relative;}
 .hidden-basket .close-basket a {background: url(img/hidden-baskey-close.png) no-repeat; width: 30px; height: 30px; display: block; position: absolute; bottom: -40px; left: 50%; margin: 0 0 0 -15px;}
 .hidden-basket .close-basket a:hover {background-position: 0 -31px;}

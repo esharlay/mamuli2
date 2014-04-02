@@ -1,5 +1,22 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
-
+		</main>
+		<div class="clear"></div>
+		<footer>
+			<div class="copyright_mamuli">
+				2014 © «У Мамули»
+				<br>
+				Кафе домашней кухни
+			</div>
+			<div class="footer_phone"><div class="phone_icon"></div>+7 499 <span class="dark">476-24-34</span></div>
+			<a href="/feedback" class="footer_btn">Обратная связь</a>
+			<div class="copyright_pixel">
+				<a href="http://www.pixelplus.ru">Создание сайта</a>
+				<br>
+				Компания «Пиксель Плюс»
+			</div>
+		</footer>
+	</div>		
+<?/*
 	 <div class="footer-promo">
 		<?
 		if ($APPLICATION->GetCurPage() != '/')
@@ -22,6 +39,7 @@
 			</div>
 		</div>
 	</div>
+	*/?>
 	<div class="bg-popup"></div>
 </body>
 </html>
