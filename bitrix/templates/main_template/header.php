@@ -57,11 +57,7 @@
 		</header>
 		<nav class="navigation_top">
 			<ul class="top_menu">
-				<li><a href="#">Главная</a></li>
-				<li><a href="#">Меню</a></li>
-				<li><a href="#">Организация праздников</a></li>
-				<li><a href="#">Отзывы и предложения</a></li>
-				<li><a href="#">Контакты</a></li>
+				<?$APPLICATION->IncludeComponent("bitrix:menu", "simpleMenu", array("ROOT_MENU_TYPE" => "top", "MAX_LEVEL" => "1"), false, array("ACTIVE_COMPONENT" => "Y"));?>
 			</ul>
 		</nav>
 		<aside>

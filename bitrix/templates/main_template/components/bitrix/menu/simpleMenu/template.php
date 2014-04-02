@@ -5,15 +5,12 @@ $secondLevel = false;
 $selected = false;
 
 if (!empty($arResult)):?>
-	<dl>
-		<?foreach($arResult as $arItem):?>
-			<? if ($arItem["DEPTH_LEVEL"] > 1): continue; endif ?>	
-				<?if ($arItem["SELECTED"]):?>
-					<dt><a class="active" href="<?=$arItem["LINK"]?>"><?=$arItem["TEXT"]?></a></dt>
-				<?else:?>
-					<dt><a href="<?=$arItem["LINK"]?>"><?=$arItem["TEXT"]?></a></dt>
-				<?endif?>		
-		<?endforeach?>		
-	</dl>
+	<?foreach($arResult as $arItem):?>
+		<? if ($arItem["DEPTH_LEVEL"] > 1): continue; endif ?>	
+			<?if ($arItem["SELECTED"]):?>
+				<li><a class="active" href="<?=$arItem["LINK"]?>"><?=$arItem["TEXT"]?></a></li>
+			<?else:?>
+				<li><a href="<?=$arItem["LINK"]?>"><?=$arItem["TEXT"]?></a></li>
+			<?endif?>		
+	<?endforeach?>		
 <?endif?>
-
