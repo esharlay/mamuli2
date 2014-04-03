@@ -167,18 +167,11 @@ header .bskt #cart .cost{
 	color: #1d5816;
 }
 
-aside,
 main {
 	float: left;
 }
 
-aside {
-	width: 190px;
-	margin: 0 26px 0 0;
-}
-
 main {
-	width: 738px;
 	margin: 0;
 	padding: 0 0 50px 0;
 }

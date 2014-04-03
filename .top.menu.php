@@ -1,32 +1,39 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"О компании",
-		SITE_DIR . "about/",
+		"Главная",
+		SITE_DIR . "/",
 		Array(),
 		Array(),
 		""
 	),
 	Array(
-		"Доставка и оплата",
-		SITE_DIR . "delivery/",
+		"Меню",
+		SITE_DIR . "/menu/",
 		Array(),
 		Array(),
 		""
 	),
 	Array(
-		"Акции",
-		SITE_DIR . "stocks/",
+		"Организация праздников",
+		SITE_DIR . "/holidays/",
 		Array(),
 		Array(),
 		""
 	),
 	Array(
-		"Заказы",
-		SITE_DIR . "orders/",
+		"Отзывы и предложения",
+		SITE_DIR . "/feedback/",
 		Array(),
 		Array(),
-		"\$GLOBALS['USER']->IsAuthorized()"
+		""
+	),
+	Array(
+		"Контакты",
+		SITE_DIR . "/contacts/",
+		Array(),
+		Array(),
+		""
 	)
 );
 ?>
