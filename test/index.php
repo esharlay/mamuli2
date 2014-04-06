@@ -1,8 +1,8 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Ã„Ã®Ã±Ã²Ã Ã¢ÃªÃ ");
+$APPLICATION->SetTitle("Êîíòàêòû");
 ?>
-
+<?/* echo "<pre>"; print_r($arResult); echo "</pre>"; */?>
 <div class="contacts_map">
 	<?$APPLICATION->IncludeComponent("bitrix:map.yandex.view", ".default", array(
 		"INIT_MAP_TYPE" => "MAP",

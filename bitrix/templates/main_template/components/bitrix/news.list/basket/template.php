@@ -73,12 +73,6 @@
 								<a class="btn-add add-person" root="<? echo SITE_DIR; ?>" href=""><?=GetMessage("GP_ADD");?></a></td>
 							</tr>
 							<tr>
-								<td class="title"></td>
-								<td class="pokemon">
-									<img class="person-icon" src="<? echo SITE_DIR; ?>img/person1.jpg" alt="">
-								</td>
-							</tr>
-							<tr>
 								<td></td>
 								<td class="btn-order"><input class="send-order" type="submit" value="<?=GetMessage("GP_OORDER");?>"></td>
 							</tr>

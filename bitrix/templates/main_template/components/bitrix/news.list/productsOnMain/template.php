@@ -27,19 +27,6 @@ $cart = $arParams['cart'];
 						</div>
 						<div class="btn-buy fl-l"><input pid="<?=$arItem['ID']?>" cost="<?=$arItem["DISPLAY_PROPERTIES"]["PRICE"]["VALUE"]?>" type="submit" value="<? echo GetMessage("GP_BUY"); ?>"></div>
 					</div>
-					<div class="description">
-						<? if ($arItem['DETAIL_TEXT']): ?>
-							<p class="title"><? echo GetMessage("GP_ADDITIONAL"); ?>:</p>
-							<p><?=$arItem['DETAIL_TEXT']?></p>
-						<? else: ?>
-							<?$APPLICATION->IncludeFile(
-								SITE_DIR."include/detail.php",
-								Array(),
-								Array("MODE"=>"html")
-								);
-							?>
-						<? endif ?>
-					</div>
 				</div>
 			</div>
 		</div>

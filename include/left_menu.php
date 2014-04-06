@@ -1,8 +1,11 @@
+<h2 class="navigation_left_header">
+	Наше меню
+</h2>
 <nav class="navigation_left">
 	<ul class="left_menu">
 	<?
 		CModule::IncludeModule("iblock");
-		$ar_result = CIBlockSection::GetList(Array("SORT"=>"В­В­ASC"), Array("IBLOCK_ID"=>"3", "DEPTH_LEVEL" => "1"),false, Array("ID","NAME","DEPTH_LEVEL"));
+		$ar_result = CIBlockSection::GetList(Array("SORT"=>"­­ASC"), Array("IBLOCK_ID"=>"3", "DEPTH_LEVEL" => "1"),false, Array("ID","NAME","DEPTH_LEVEL"));
 		while ($res=$ar_result->GetNext()){
 			?>
 			<? if (SITE_DIR == "/"): ?>

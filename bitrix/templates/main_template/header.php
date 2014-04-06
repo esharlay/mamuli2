@@ -37,7 +37,7 @@
 			<? if ($USER->IsAdmin()): ?>
 				<a href="/orders/" class="btn_large">Заказы</a>
 			<? else: ?>
-				<a href="/feedback/" class="btn_large">Обратная связь</a>
+				<a href="/contacts/" class="btn_large">Обратная связь</a>
 			<? endif ?>
 			
 			<div class="bskt">
@@ -49,15 +49,10 @@
 				?>
 				<a id='cart' href="#">
 					<div class="cost tooltip" <? if (!$cost) echo 'style="display:none"'; ?>>
-						Цена:
+						Цена :
 						<span class="totalcost"> <? echo $cost; ?></span><? echo GetMessage("GP_DEL_RUB"); ?>
 					</div>
 				</a>
-				<!--a href="" class="icon"></a>
-				<p class="text">
-					Товаров: 
-					<a href="#">3</a>
-				</p-->
 			</div>
 		</header>
 		<nav class="navigation_top">
@@ -74,62 +69,3 @@
 			<img src="/img/banner.png" alt="">
 		</aside>
 		<main>
-	<?/*
-	<div id="container">
-		
-		<div id="header">
-
-			<div class="centered">
-				<div class="navi ">
-					<?$APPLICATION->IncludeComponent("bitrix:menu", "simpleMenu", array("ROOT_MENU_TYPE" => "top", "MAX_LEVEL" => "1"), false, array("ACTIVE_COMPONENT" => "Y"));?>
-				</div>
-				<div class="basket">
-					<?
-					$cart = $_SESSION['cart'];
-					$cost = 0;
-					if ($cart)
-						$cost = $cart['cost'];
-					?>
-					<a id='cart' href="#">
-
-						<div class="cost tooltip" <? if (!$cost) echo 'style="display:none"'; ?>>
-							<div class="wrapper">
-
-								<p><span class="totalcost"><? echo $cost; ?></span><? echo GetMessage("GP_DEL_RUB"); ?></p>
-								<span class="tic"></span>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class="contact">
-					<?$APPLICATION->IncludeFile(
-						SITE_DIR."include/contacts_small.php",
-						Array(),
-						Array("MODE"=>"html")
-					);?>
-				</div>
-			</div>
-
-		</div>
-		
-		<div id="content">
-
-
-			<div class="navigation <?if ($APPLICATION->GetCurPage() != '/') echo "inner"; ?>">
-				<dl>
-				<?$APPLICATION->IncludeFile(
-						SITE_DIR."include/main_menu.php",
-						Array(),
-						Array("MODE"=>"html")
-					);?>
-				<?$APPLICATION->IncludeFile(
-						SITE_DIR."include/additional_menu.php",
-						Array(),
-						Array("MODE"=>"html")
-					);?>
-				</dl>
-			</div>
-		*/?>
-
-
