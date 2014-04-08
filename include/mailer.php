@@ -61,7 +61,7 @@ $mess .= '<b>Сообщение: </b>'.$_POST['input_name'][3].'<br />';
         $mail = new PHPMailer();
         $mail->From = 'Сайт. Кафе у мамули';      // от кого email
         $mail->FromName = 'info@cafeumamuli.ru';   // от кого имя
-        $mail->AddAddress('e.sharlay@pixelstar.ru', 'admin'); // кому - адрес, Имя
+        $mail->AddAddress('cafeumamuli@gmail.com', 'admin'); // кому - адрес, Имя
         $mail->IsHTML(true);        // выставляем формат письма HTML
         $mail->Subject = 'Сообщение с сайта';  // тема письма
         $mail->Body = $mess;
