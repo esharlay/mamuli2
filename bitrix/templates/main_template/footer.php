@@ -7,7 +7,7 @@
 				<br>
 				Кафе домашней кухни
 			</div>
-			<div class="footer_phone"><div class="phone_icon"></div>+7 499 <span class="dark">476-24-34</span></div>
+			<div class="footer_phone"><div class="phone_icon"></div>+7 498 <span class="dark">305-53-23</span></div>
 			<a href="/contacts/" class="footer_btn">Обратная связь</a>
 			<div class="copyright_pixel">
 				<a href="http://www.pixelplus.ru">Создание сайта</a>

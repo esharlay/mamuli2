@@ -32,7 +32,7 @@
 		<header class="row">
 			<a href="/" class="logo"></a>
 			<div class="phone">
-				+7 499 <span>476-24-34</span>
+				+7 498 <span>305-53-23</span>
 			</div>
 			<? if ($USER->IsAdmin()): ?>
 				<a href="/orders/" class="btn_large">Заказы</a>
@@ -44,13 +44,17 @@
 				<?
 				$cart = $_SESSION['cart'];
 				$cost = 0;
+				$count = 0;
 				if ($cart)
 					$cost = $cart['cost'];
+					$count = $cart['count'];
 				?>
 				<a id='cart' href="#">
 					<div class="cost tooltip" <? if (!$cost) echo 'style="display:none"'; ?>>
 						Цена :
-						<span class="totalcost"> <? echo $cost; ?></span><? echo GetMessage("GP_DEL_RUB"); ?>
+						<span class="totalcost"><? echo $cost; ?></span><? echo GetMessage("GP_DEL_RUB"); ?>
+						<br>
+						Товаров: <span class="counter"><? echo $count; ?></span>
 					</div>
 				</a>
 			</div>
@@ -66,77 +70,54 @@
 				Array(),
 				Array("MODE"=>"html")
 			);?>
-			<?$APPLICATION->IncludeComponent(
-				"bitrix:news.list",
-				"banner_left",
-				Array(
-					"TEMPLATE_THEME" => "blue",
-					"ADD_PICT_PROP" => "-",
-					"LABEL_PROP" => "-",
-					"MESS_BTN_BUY" => "Купить",
-					"MESS_BTN_ADD_TO_BASKET" => "В корзину",
-					"MESS_BTN_SUBSCRIBE" => "Подписаться",
-					"MESS_BTN_DETAIL" => "Подробнее",
-					"MESS_NOT_AVAILABLE" => "Нет в наличии",
-					"AJAX_MODE" => "N",
-					"IBLOCK_TYPE" => "elements",
-					"IBLOCK_ID" => "5",
-					"SECTION_ID" => $_REQUEST["SECTION_ID"],
-					"SECTION_CODE" => "",
-					"SECTION_USER_FIELDS" => array(),
-					"ELEMENT_SORT_FIELD" => "sort",
-					"ELEMENT_SORT_ORDER" => "asc",
-					"ELEMENT_SORT_FIELD2" => "id",
-					"ELEMENT_SORT_ORDER2" => "desc",
-					"FILTER_NAME" => "arrFilter",
-					"INCLUDE_SUBSECTIONS" => "Y",
-					"SHOW_ALL_WO_SECTION" => "N",
-					"SECTION_URL" => "",
-					"DETAIL_URL" => "",
-					"SECTION_ID_VARIABLE" => "SECTION_ID",
-					"SET_META_KEYWORDS" => "Y",
-					"META_KEYWORDS" => "-",
-					"SET_META_DESCRIPTION" => "Y",
-					"META_DESCRIPTION" => "-",
-					"BROWSER_TITLE" => "-",
-					"ADD_SECTIONS_CHAIN" => "N",
-					"DISPLAY_COMPARE" => "N",
-					"SET_TITLE" => "Y",
-					"SET_STATUS_404" => "N",
-					"PAGE_ELEMENT_COUNT" => "30",
-					"LINE_ELEMENT_COUNT" => "3",
-					"PROPERTY_CODE" => array(),
-					"OFFERS_LIMIT" => "5",
-					"PRICE_CODE" => array(),
-					"USE_PRICE_COUNT" => "N",
-					"SHOW_PRICE_COUNT" => "1",
-					"PRICE_VAT_INCLUDE" => "Y",
-					"BASKET_URL" => "/personal/basket.php",
-					"ACTION_VARIABLE" => "action",
-					"PRODUCT_ID_VARIABLE" => "id",
-					"USE_PRODUCT_QUANTITY" => "N",
-					"PRODUCT_QUANTITY_VARIABLE" => "quantity",
-					"ADD_PROPERTIES_TO_BASKET" => "Y",
-					"PRODUCT_PROPS_VARIABLE" => "prop",
-					"PARTIAL_PRODUCT_PROPERTIES" => "N",
-					"PRODUCT_PROPERTIES" => array(),
-					"CACHE_TYPE" => "A",
-					"CACHE_TIME" => "36000000",
-					"CACHE_FILTER" => "N",
-					"CACHE_GROUPS" => "Y",
-					"PAGER_TEMPLATE" => ".default",
-					"DISPLAY_TOP_PAGER" => "N",
-					"DISPLAY_BOTTOM_PAGER" => "Y",
-					"PAGER_TITLE" => "Товары",
-					"PAGER_SHOW_ALWAYS" => "Y",
-					"PAGER_DESC_NUMBERING" => "N",
-					"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
-					"PAGER_SHOW_ALL" => "Y",
-					"AJAX_OPTION_JUMP" => "N",
-					"AJAX_OPTION_STYLE" => "Y",
-					"AJAX_OPTION_HISTORY" => "N"
+			<?$APPLICATION->IncludeComponent("bitrix:news.list", "banner_left", array(
+				"IBLOCK_TYPE" => "elements",
+				"IBLOCK_ID" => "1",
+				"NEWS_COUNT" => "20",
+				"SORT_BY1" => "ACTIVE_FROM",
+				"SORT_ORDER1" => "DESC",
+				"SORT_BY2" => "SORT",
+				"SORT_ORDER2" => "ASC",
+				"FILTER_NAME" => "arrFilter",
+				"FIELD_CODE" => array(
+					0 => "",
+					1 => "",
 				),
-			false
+				"PROPERTY_CODE" => array(
+					0 => "",
+					1 => "",
+				),
+				"CHECK_DATES" => "Y",
+				"DETAIL_URL" => "",
+				"AJAX_MODE" => "N",
+				"AJAX_OPTION_JUMP" => "N",
+				"AJAX_OPTION_STYLE" => "Y",
+				"AJAX_OPTION_HISTORY" => "N",
+				"CACHE_TYPE" => "A",
+				"CACHE_TIME" => "36000000",
+				"CACHE_FILTER" => "N",
+				"CACHE_GROUPS" => "Y",
+				"PREVIEW_TRUNCATE_LEN" => "",
+				"ACTIVE_DATE_FORMAT" => "d.m.Y",
+				"SET_TITLE" => "Y",
+				"SET_STATUS_404" => "N",
+				"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+				"ADD_SECTIONS_CHAIN" => "N",
+				"HIDE_LINK_WHEN_NO_DETAIL" => "N",
+				"PARENT_SECTION" => "",
+				"PARENT_SECTION_CODE" => "",
+				"INCLUDE_SUBSECTIONS" => "Y",
+				"PAGER_TEMPLATE" => ".default",
+				"DISPLAY_TOP_PAGER" => "N",
+				"DISPLAY_BOTTOM_PAGER" => "Y",
+				"PAGER_TITLE" => "Товары",
+				"PAGER_SHOW_ALWAYS" => "Y",
+				"PAGER_DESC_NUMBERING" => "N",
+				"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+				"PAGER_SHOW_ALL" => "Y",
+				"AJAX_OPTION_ADDITIONAL" => ""
+				),
+				false
 			);?>
 		</aside>
 		<main>

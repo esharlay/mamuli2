@@ -23,7 +23,7 @@ $cart = $arParams['cart'];
 						<div class="qnty fl-l">
 							<a href="#" class="minus fl-l"></a>
 							<input type="text" value="1" class="fl-l" id="count-<?=$arItem['ID']?>">
-							<a href="#" class="plus fl-l"></a>
+							<a href="#" class="plus fl-l">sdfsd</a>
 						</div>
 						<div class="btn-buy fl-l"><input pid="<?=$arItem['ID']?>" cost="<?=$arItem["DISPLAY_PROPERTIES"]["PRICE"]["VALUE"]?>" type="submit" value="<? echo GetMessage("GP_BUY"); ?>"></div>
 					</div>

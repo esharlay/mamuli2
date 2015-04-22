@@ -228,12 +228,17 @@ function cartToogle(){
 function updatePrice(){
 
 	var total = 0;
+		counter = 0;
 
 	$('.add-item .tooltip').hide();
 	$('.add-item').removeClass('active');
 
 	$('tr.item .cost').each(function(){
 		total += $(this).find('span').html() * 1;
+	});
+
+	$('tr.item .qnty').each(function(){
+		counter += $(this).find('input').val() * 1;
 	});
 
 	$('tr.item .qnty').each(function(){
@@ -246,10 +251,12 @@ function updatePrice(){
 
 	if (total){
 		$('span.totalcost').html(total);
+		$('span.counter').html(counter);
 		$('#cart .tooltip').show();
 	}
 	else{
 		$('span.totalcost').html('');
+		$('span.counter').html('');
 		$('#cart .tooltip').hide();
 	}
 
